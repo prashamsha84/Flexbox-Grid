@@ -1,0 +1,203 @@
+/* 
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+    height: 100%;
+  }
+   */
+/* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    justify-content: space-around;  */
+    /* flex-start flex-end center space-around
+    space-between space-evenly */
+  /* } */
+/* 
+  .container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  padding: 10px; */
+  /* height: 100%; */
+  /* text-align: center; */
+  /* justify-content: flex-end; */
+/* } */
+
+/* positioning with margin */
+/* .home { 
+  margin-right: auto;
+} */
+
+/* flex property */ /*flex-grow, flex-shrink, flex-basis */
+/* .container > div{
+    flex: 1;
+     
+} */
+
+/* flex twice than other item */
+/* .container > .about {
+    flex: 2;
+    background-color: red;
+  } */
+/* 
+  flex in start and end item */
+  /* .home, .contact{
+    flex: 2;
+  } */
+/* 
+  centering one item */
+  /* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  /* align item */
+  /* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .contact {
+    align-self: flex-start;
+  }
+  .home{
+    align-self: flex-end
+  } */
+
+  /* flex direction column */
+  /* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-end;
+  }
+   */
+
+   /* wrapping */
+   /* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container > div {
+    width: 300px;
+  } */
+
+  /* flex grow- howhast/much it grow with (occupied) container in larger screen, shrink-how fast it shrink in small display, basis- basis witdth of the container*/
+  /* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+  }
+  
+  .home {
+    flex: 1 1 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    
+  }
+  
+  .logout {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+  } */
+  
+  /* Order */
+  /* .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+  }
+  
+  .item1 {
+    order: 1;
+  }
+  
+  .item2 {
+    order: 0;
+  }
+  
+  .item3 {
+    order: -1;
+  } */
+
+  .container > li {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+    box-sizing: border-box;
+    background-color: #96ceb4;
+    list-style-type: none;
+  }
+  
+  html, body {
+    background-color: #ffeead;
+    margin: 10px;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  .search-input {
+    background: #ff6e68;
+    border: 0;
+    width: 100%;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #ffeead;
+    color: #ffeead;
+    font-size: 2rem;
+  }
+  ::placeholder{
+    color: #ffeead;
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .container > li {
+    background-color: #96ceb4;
+  }
+  .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+  }
+  
+  .search {
+    flex: 1;
+    
+  }
+  
+  @media all and (max-width: 600px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    .container > li {
+      flex: 1 1 50%;
+    }
+    
+    .search > input {
+      text-align: center;
+    }
+  }
+  
+  @media all and (max-width: 400px) {
+    .container > li {
+      flex: 1 1 100%;
+    }
+    .search {
+      order: 1;
+    }
+  }
+  
+  
+  
